@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #1e5dba;
+    color: white;
+}
+ 
+.logo{
+    cursor: pointer;
+    margin: auto 50px auto 50px;
+    text-align: center;
+}
+
+.logo1{
+    color: black;
+}
+
+.logo2{
+    color: rgb(230, 164, 84);
+}
+
+.toggle-btn{
+    display: none;
+    margin-right: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+
+.navlist{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 40%;
+    align-items: center;
+}
+
+.navlist li{
+    transition: ease-in .2s;
+}
+
+.navlist li :hover{
+    text-decoration: underline white;
+    text-underline-offset: 7px;
+}
+
+.navlist a  {
+    font-weight: 500;
+    color: white;
+}
+
+.dropdown-menu{
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: #1e5dba;
+    height: 0;
+
+}
+
+.dropdown-menu.open{
+    height: max-content;
+    padding: 5%;
+}
+
+.dropdown-menu li a{
+    font-weight: bold;
+    color: rgb(230, 164, 84);
+    cursor: pointer;
+}
+
+.dropdown-menu li{
+    margin-top: 5%;
+}
+
+#cv-btn{
+    margin: 10px 50px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    border:0;
+    cursor: pointer;
+}
+
+#cv-btn:hover{
+    background-color: rgb(101, 154, 200);
+    color: rgb(230, 218, 218);
+    transition: ease-in-out .3s;
+
+    font-weight: 400;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+    margin-top: 50px;
+
+    padding: 5%;
+}
+
+/* under line animation code for nav link */
+.home-text{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.home-text h3{
+    font-size: 20px;
+    color: #1e5dba;
+    line-height: 2;
+}
+
+.home-text h1{
+    font-size: 50px;
+    color: orange;
+}
+
+.home-text h5{
+    font-size: 25px;
+    line-height: 2;
+}
+
+.home-text h5 span{
+    font-size: 20px;
+    color: mediumslateblue;
+}
+
+.home-text p{
+    font-size: medium;
+    color: #1e5dba;
+    text-align: justify;
+}
+
+.btn{
+    width: max-content;
+    padding: 10px;
+    border: none;
+    background-color: #1e5dba;
+    color: aliceblue;
+    margin-top: 25px;
+    transition: ease-in .25s;
+    
+}
+
+.btn:hover{
+    background-color:aliceblue ;
+    color: #1e5dba;
+}
+
+.home-img{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* my services */
+
+.service-heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.services{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+    margin: 5% 10% 0% 10%;
+}
+
+.service{
+    width: 35vh;
+    height: auto;
+    background-color: aliceblue;
+    color: #1e5dba;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
+.service:hover{
+    transform: translate(0px, 5px);
+}
+
+.service img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.service p{
+
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.service .service-btn{
+    width: max-content;
+    padding: 10px;
+    border: none;
+    background-color: #1e5dba;
+    color: aliceblue;
+    margin: 25px 0 25px 0;
+    transition: ease-in .25s;     
+}
+
+.service .service-btn:hover{
+        background-color:aliceblue ;
+        color: #1e5dba;
+    
+}
+
+.about-heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    align-self: center;
+    column-gap: 100px;
+
+    margin: 5% 15% 5% 15%;
+
+}
+
+.about img{
+    border-radius: 10%;
+    width: 400px;
+    height: 300px;
+}
+
+.about .text-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-content h3{
+    line-height: 2;
+    color: orange;
+}
+
+.text-content h1 span{
+    color: #1e5dba;
+    margin-top: 30px;
+}
+
+.text-content p{
+    margin-top: 40px;
+}
+
+/* portfolio section */
+.portfolio-heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500; 
+}
+
+
+.portfolio{
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    row-gap: 50px;
+
+
+
+    padding: 10px;
+}
+
+.portfolio .work{
+    width: 300px;  
+    height: 500px;
+    padding: 20px; 
+    background-color: cornflowerblue;
+    border-radius: 5%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfolio .work:hover{
+    transform: translate(5px, 0px);
+}
+
+.portfolio .work img{
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+
+.portfolio .work p{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.portfolio .work .portfolio-btn{
+    width: max-content;
+    padding: 10px;
+    border: none;
+    background-color: #1e5dba;
+    color: aliceblue;
+    transition: ease-in .25s;
+    margin-top: 20px;   
+}
+
+.portfolio .work .portfolio-btn:hover{
+    background-color:aliceblue ;
+    color: #1e5dba;
+}
+
+/* skills section */
+
+.skills .heading{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skills-heading{
+    font-size: 40px;
+}
+
+
+.content{
+    display: flex;
+    justify-content: center;
+
+    column-gap: 5%;
+    
+    margin: 5% 0% 5% 0;
+}
+
+.skill-box{
+    width: 300px;
+    height: 350px;
+    background-color: #1e5dba;  
+    color: white;
+    padding: 5%;
+    border-radius: 5%;
+    margin-top: 15px;
+}
+
+
+.skill-box h3{
+    text-align: center;
+    color: #ebba92;
+}
+
+.skill-box .skillname-box{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #1e5dba;
+    color: aliceblue;
+    transition: ease-in .25s; 
+}
+
+/* contact section */
+
+#contact{
+    margin: 0% 10% 5% 10%;
+    border-radius: 10%;
+    padding: 5%;
+}
+
+.contact-heading{
+    font-size: 40px;
+}
+
+.contact-desc{
+    font-size: 20px;
+    color: black;
+}
+
+.contact-content{
+    margin-top: 50px;
+    text-align: center;
+    background-color: #1e5dba;
+    padding: 20px 0px 20px 0px;
+    color: white;
+}
+
+.contact-content p{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 30px 0px 30px 0px;
+}
+
+.contact-content form input[type='email']{
+    font-size: 20px;
+    border: none;
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5%;
+}
+
+
+.contact-content form button[type='submit']{
+    font-size: 20px;
+    border: none;
+    width: 200px;
+    border-radius: 20px;
+    transition: ease-in .2s;
+    background-color: #1e5dba;
+    color: white;
+    cursor: pointer;
+    border: white 2px solid;
+
+    margin: 5%;
+}
+
+.contact-content form button[type='submit']:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+/* footer */
+footer{
+
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0px 10px 0px;
+
+    text-align: center;
+    background-color: #1e5dba;
+    color: white;
+}
+
+footer p span{
+    color: black;
+    font-weight: bold;
+}
+
+/* responsiveness */
+
+@media (max-width:895px){
+    
+    .hamburger{
+        display: block;
+    }
+    
+    .logo{
+        margin-left: 0px;
+    }
+
+    #cv-btn{
+        margin: 10px 0px;
+    }
+
+    .services{
+        flex-direction: column;
+        
+    }
+
+    .service{
+        width: 50%;
+        align-self: center;
+    }
+
+    .portfolio{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .portfolio .work{
+        width: 100%;
+
+    }
+
+    .skills .content{
+        flex-direction: column;
+        margin: 0% 20% 0% 20%;
+    }
+
+    .skills .content .skill-box{
+        align-self: center;
+        width: 100%;
+    }
+
+}
+
+@media(max-width:900px){
+    .navlist{
+        display: none;
+    }
+
+    .toggle-btn{
+        display: block;
+    }
+
+    .dropdown-menu{
+        display: block;
+    }
+}
